@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libby</title>
+    <!--Bootstrap-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="../assets/css/lib.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/animate.css">
+    <script src="../js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="first">
+                <img src="../assets/images/logo.png" class="img">
+                <a href="" data-bs-toggle="modal" data-bs-target="#myModal">Login or
+                    Register</a>
+
+                <!-- The Modal -->
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Login Form</h4>
+                                <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <form action="" method="post">
+                                    <div class="form-group">
+                                        <form action="" method="post">
+                                            <label>Email</label>
+                                            <input type="email" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Password</label>
+                                        <input type="password" class="form-control" required>
+                                    </div>
+                                    <button type="button" class="btn btn-primary">Login</button>
+                                    <div class="anchor">Forgot password? <a href="#" class="btn-sm">Reset it here.</a>
+                                    </div>
+                                    <div class="anchor">Not registered yet? <a href="" class="btn-sm">Register here.</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="title">
+        <h2>Private Data</h2>
+        <p>Create your Libby now!</p>
+    </section>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-12">
+                <div class="fund-manager-full">
+                    <div class="wt-tabs  bg-tabs">
+                        <ul class="nav nav-tabs">
+                            <li class="show">
+                                <a data-bs-toggle="tab" href="#a" aria-expanded="true" class="active show">
+                                    01</a>
+                                <div class="text">Basic info</div>
+                            </li>
+                            <li class="">
+                                <a data-bs-toggle="tab" href="#b" aria-expanded="false">
+                                    02</a>
+                                <div class="text">Intro / visuals</div>
+                            </li>
+                            <li class="">
+                                <a data-bs-toggle="tab" href="#c" aria-expanded="false">
+                                    03</a>
+                                <div class="text selected">Convo options</div>
+                            </li>
+                            <li class="">
+                                <a data-bs-toggle="tab" href="#d" aria-expanded="false">
+                                    04</a>
+                                <div class="text">Sharing / other</div>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-content">
+
+                        <div id="a" class="tab-pane active show">
+                            <div class="section-content">
+                                <div class="tab-section">
+                                    <img src="../assets/images/libby-happy.gif">
+                                    <div class="libby">
+                                        <span id="libbyhelp">tell me your name and what you do!</span>
+                                        <div class="line"></div>
+                                    </div>
+                                </div>
+                                <div class="wt-accordion acc-outline" id="accordion3">
+                                    <div class="panel wt-panel">
+                                        <div class="acod-head acc-actives">
+                                            <form action="" method="post">
+                                                <label>First Name:</label>
+                                                <input type="text" class="form-control" required>
+                                            </form>
+                                        </div>
+
+                                    </div>
+                                    <div class="panel wt-panel">
+                                        <div class="acod-head">
+                                            <form action="" method="post">
+                                                <label>Last Name:</label>
+                                                <input type="text" class="form-control" required>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="panel wt-panel">
+                                        <div class="acod-head">
+                                            <form action="" method="post">
+                                                <label>Email:</label>
+                                                <input type="text" class="form-control" placeholder="yahoo@gmail.com"
+                                                    required>
+                                            </form>
+                                        </div>
+
+                                    </div>
+                                    <div class="panel wt-panel">
+                                        <div class="acod-head">
+                                            <form action="" method="post">
+                                                <label>Password:</label>
+                                                <input type="password" class="form-control" placeholder="G12345678#"
+                                                    required>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <button type="button" class="btn btn-primary">Login</button> <span>(OR)</span>
+                                        <button type="button" class="btn btn-primary">Next step</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="b" class="tab-pane">
+                            <div class="section-content">
+                                <div class="tab-section">
+                                    <img src="../assets/images/step2.gif">
+                                    <div class="libby">
+                                        <span id="libbyhelp">Choose the intro and style. You can also add custom links
+                                            (to instagram, your website, etc).</span>
+                                        <div class="line"></div>
+                                    </div>
+                                </div>
+
+                                <div class="wt-accordion acc-outline" id="accordion3">
+                                    <div class="main-section">
+                                        <div class="panel wt-panel">
+                                            <div class="acod-head acc-actives">
+                                                <div class="img-section">
+                                                    <img src="../assets/images/expo-598x268-1-370x170.jpg">
+                                                </div>
+                                                <div class="img-line"></div>
+                                                <div class="vid-rad">
+                                                    <h3>A guaranteed
+                                                        <br><span>personal approach</span>
+                                                    </h3>
+                                                    <p>With a team fluent in English, Hindi and Arabic, <br>we serve you
+                                                        the best!
+                                                    </p>
+                                                    <a href="">Get Started</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel wt-panel">
+                                            <div class="acod-head">
+                                                <div class="img-section">
+                                                    <img src="../assets/images/conference-370x170.jpg">
+                                                </div>
+                                                <div class="img-line"></div>
+                                                <div class="vid-rad">
+                                                    <h3>Integrated with
+                                                        <br><span>robust technology</span>
+                                                    </h3>
+                                                    <p>In-depth knowledge and vanguard technology<br> - Zara FX is the best choice!
+                                                    </p>
+                                                    <a href="">Connect Us</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="c" class="tab-pane">
+                            <div class="section-content">
+                                <div class="tab-section">
+                                    <img src="../assets/images/step3.gif">
+                                    <div class="libby">
+                                        <span id="libbyhelp">Set the questions you want to ask and
+                                            provide other key
+                                            points about your service</span>
+                                        <div class="line"></div>
+                                    </div>
+                                </div>
+                                <div class="wt-accordion acc-outline" id="accordion3">
+                                    <div class="panel wt-panel">
+                                        <div class="acod-head acc-actives">
+                                            <h6 class="acod-title">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne3">
+                                                    <b>What questions should Libby ask?</b>
+                                                </button>
+                                            </h6>
+                                        </div>
+                                        <div id="collapseOne3" class="accordion-collapse collapse"
+                                            aria-labelledby="headingOne">
+                                            <div class="acod-content p-tb15">
+                                                The apportionment of premiums and discounts on forward
+                                                exchange
+                                                transactions
+                                                that relate directly to deposit swap (interest
+                                                arbitrage) deals, over
+                                                the
+                                                period
+                                                of each deal.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel wt-panel">
+                                        <div class="acod-head">
+                                            <h6 class="acod-title">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseTwo3">
+                                                    <b>What should Libby know about you?</b>
+
+                                                </button>
+                                            </h6>
+                                        </div>
+                                        <div id="collapseTwo3" class="accordion-collapse collapse"
+                                            aria-labelledby="headingTwo">
+                                            <div class="acod-content p-tb15">
+                                                Official action normally occasioned by a change either
+                                                in the internal
+                                                economic
+                                                policies to correct a payment imbalance or in the
+                                                official currency
+                                                rate.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel wt-panel">
+                                        <div class="acod-head">
+                                            <h6 class="acod-title">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseThree3">
+
+                                                    <b>Where is your service provided?</b>
+
+                                                </button>
+                                            </h6>
+                                        </div>
+                                        <div id="collapseThree3" class="accordion-collapse collapse">
+                                            <div class="acod-content p-tb15">
+                                                Traders and/or price action are acting with conviction.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel wt-panel">
+                                        <div class="acod-head">
+                                            <h6 class="acod-title">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseThree4">
+
+                                                    <b>How will people schedule you?</b>
+
+                                                </button>
+                                            </h6>
+                                        </div>
+                                        <div id="collapseThree4" class="accordion-collapse collapse">
+                                            <div class="acod-content p-tb15">
+                                                A financial professional who has expertise in evaluating
+                                                investments and
+                                                puts
+                                                together buy, sell and hold recommendations for clients.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel wt-panel">
+                                        <div class="acod-head">
+                                            <h6 class="acod-title  ">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseThree5">
+
+                                                    <b>What is your pricing? (optional)</b>
+
+                                                </button>
+                                            </h6>
+                                        </div>
+                                        <div id="collapseThree5" class="accordion-collapse collapse">
+                                            <div class="acod-content p-tb15">
+                                                A product is said to ‘appreciate’ when it strengthens in
+                                                price in
+                                                response
+                                                to
+                                                market demand.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel wt-panel">
+                                        <div class="acod-head">
+                                            <h6 class="acod-title">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseThree6">
+
+                                                    <b>Arbitrage</b>
+                                                    <span class="indicator"><i class="fa fa-plus"></i></span>
+                                                </button>
+                                            </h6>
+                                        </div>
+                                        <div id="collapseThree6" class="accordion-collapse collapse">
+                                            <div class="acod-content p-tb15">
+                                                The simultaneous purchase or sale of a financial product
+                                                in order to
+                                                take
+                                                advantage of small price differentials between markets.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- D section -->
+                        <div id="d" class="tab-pane">
+                            <div class="section-content">
+                                <div class="tab-section">
+                                    <img src="../assets/images/step4.gif">
+                                    <div class="libby">
+                                        <span id="libbyhelp">Here are ways to share this and get
+                                            notified when you get
+                                            leads.</span>
+                                        <div class="line"></div>
+                                    </div>
+                                </div>
+                                <div class="wt-accordion acc-outline" id="accordion3">
+                                    <div class="panel wt-panel">
+                                        <div class="acod-head acc-actives">
+                                            <h6 class="acod-title  ">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne19">
+                                                    <b>Day Trader</b>
+                                                    <span class="indicator"><i class="fa fa-plus"></i></span>
+                                                </button>
+                                            </h6>
+                                        </div>
+                                        <div id="collapseOne19" class="accordion-collapse collapse">
+                                            <div class="acod-content p-tb15">
+                                                Speculators who take positions in commodities and then
+                                                liquidate those
+                                                positions
+                                                prior to the close of the same trading day.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel wt-panel">
+                                        <div class="acod-head">
+                                            <h6 class="acod-title  ">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseTwo20">
+                                                    <b>Deal</b>
+                                                    <span class="indicator"><i class="fa fa-plus"></i></span>
+                                                </button>
+                                            </h6>
+                                        </div>
+                                        <div id="collapseTwo20" class="accordion-collapse collapse">
+                                            <div class="acod-content p-tb15">
+                                                A term that denotes a trade done at the current market
+                                                price. It is a
+                                                live
+                                                trade
+                                                as opposed to an order.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel wt-panel">
+                                        <div class="acod-head">
+                                            <h6 class="acod-title  ">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseThree21">
+                                                    <b>Dealear</b>
+                                                    <span class="indicator"><i class="fa fa-plus"></i></span>
+                                                </button>
+                                            </h6>
+                                        </div>
+                                        <div id="collapseThree21" class="accordion-collapse collapse">
+                                            <div class="acod-content p-tb15">
+                                                An individual or firm that acts as a principal or
+                                                counterpart to a
+                                                transaction.
+                                                Principals take one side of a position, hoping to earn a
+                                                spread (profit)
+                                                by
+                                                closing out the position in a subsequent trade with
+                                                another party.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel wt-panel">
+                                        <div class="acod-head">
+                                            <h6 class="acod-title">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseThree22">
+                                                    <b>Delivery</b>
+                                                    <span class="indicator"><i class="fa fa-plus"></i></span>
+                                                </button>
+                                            </h6>
+                                        </div>
+                                        <div id="collapseThree22" class="accordion-collapse collapse">
+                                            <div class="acod-content p-tb15">
+                                                A trade where both sides make and take actual delivery
+                                                of the product
+                                                traded.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel wt-panel">
+                                        <div class="acod-head">
+                                            <h6 class="acod-title  ">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseThree23">
+                                                    <b>Delta</b>
+                                                    <span class="indicator"><i class="fa fa-plus"></i></span>
+                                                </button>
+                                            </h6>
+                                        </div>
+                                        <div id="collapseThree23" class="accordion-collapse collapse">
+                                            <div class="acod-content p-tb15">
+                                                The ratio between the change in price of a product and
+                                                the change in
+                                                price
+                                                of
+                                                its underlying market.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel wt-panel">
+                                        <div class="acod-head">
+                                            <h6 class="acod-title  ">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseThree24">
+                                                    <b>Depreciation</b>
+                                                    <span class="indicator"><i class="fa fa-plus"></i></span>
+                                                    </a>
+                                            </h6>
+                                        </div>
+                                        <div id="collapseThree24" class="accordion-collapse collapse">
+                                            <div class="acod-content p-tb15">
+                                                The decrease in value of an asset over time.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="foot">
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="libimage">
+                        <img src="../assets/images/libby-plain.png">
+                    </div>
+                </div>
+                <div class="col-lg-8 col-sm-6">
+                    <div class="content">
+                        <h2> Let Libby handle your leads today! </h2>
+                        <a href="../html/account.html">Create your Libby now!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--start footer-bottom!-->
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="footer-bottom-contnt">
+                        <a href="">Privacy Policy</a>
+                        <a href="">AML & KYC</a>
+                        <a href="">Cookie Policy</a>
+                        <a href="">Complaints Policy</a>
+                        <a href="">Risk Disclosure</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-copy">
+                        <p>© 2023 HeyLibby.ai. All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
